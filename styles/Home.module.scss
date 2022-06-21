@@ -1,7 +1,8 @@
-@use 'variables';
+@use 'var';
 
 
-.test {
-  color: variables.$primary-color-main;
+.main {
+  background-color: var.$primary-color-secondary;
+  height: 150vh;
+  overflow:auto
 }
-

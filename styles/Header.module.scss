@@ -1,13 +1,77 @@
-@use 'variables';
+@use "var";
 
+@media screen and (min-width: 1110px) {
+  
+}
 
 .headerContainer {
-    margin: 2rem;
-    outline: 1px solid red;
-    height: 60px;
+    height: 48px;
+    width: 77vw;
+    display: flex;
+    align-items: center;
+    margin: 3rem auto 0 auto;
+    position: relative;
 }
+
+
 
 .mainNavContainer {
     display: flex;
     height: 100%;
+    align-items: center;
 }
+
+.logo {
+    padding-right: 0.4rem;
+}
+
+.brand {
+    line-height: 30px;
+    margin: 0;
+    font-family: var.$font-public;
+    padding-bottom: 5px;
+    color: var.$secondary-color-sanjuan;
+    font-weight: 100;
+    > strong {
+        font-weight: 700;
+    }
+}
+
+.scheduleButton {
+    height: 48px;
+    width: 173px;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: var.$primary-color-main;
+    color: white;
+    border: none;
+    right: 0;
+    font-size: 0.9rem;
+    position: absolute;
+}
+
+.scheduleButton:hover {
+    background-color: var.$secondary-color-charmpink;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1110px) {
+  .headerContainer {
+      width: 90vw;
+  }
+}
+
+@media screen and (max-width: 719px) {
+  .scheduleButton {
+    display: none;
+  }
+
+  .mainNavContainer {
+    width: 90vw;
+    justify-content: space-between;
+}
+}
+
+// .brandStrong {
+//   font-weight: 400;
+// }

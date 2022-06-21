@@ -1,15 +1,26 @@
-@use 'variables';
+@use 'var';
 
 .navBarContainer {
-    margin-left: 5rem;
-    color: variables.$secondary-color-lightsanjuan;
+    margin-left: 3rem;
+    color: var.$secondary-color-lightsanjuan;
     font-weight: 700;
     height: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
         li {
             padding: 1rem;
             list-style: none;
-            font-family: variables.$font-public;
+            font-family: var.$font-public;
         }
+        li:hover {
+            color: var.$secondary-color-sanjuan;
+            cursor: pointer;
+        }
+}
+
+@media screen and (max-width: 720px) {
+    .menuIcon {
+        cursor: pointer;
+    }
 }
