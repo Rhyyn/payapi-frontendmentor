@@ -1,0 +1,13 @@
+@use 'variables';
+
+
+.headerContainer {
+    margin: 2rem;
+    outline: 1px solid red;
+    height: 60px;
+}
+
+.mainNavContainer {
+    display: flex;
+    height: 100%;
+}

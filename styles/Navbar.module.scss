@@ -1,0 +1,15 @@
+@use 'variables';
+
+.navBarContainer {
+    margin-left: 5rem;
+    color: variables.$secondary-color-lightsanjuan;
+    font-weight: 700;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+        li {
+            padding: 1rem;
+            list-style: none;
+            font-family: variables.$font-public;
+        }
+}
