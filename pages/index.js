@@ -9,6 +9,27 @@ export default function Home() {
         <React.Fragment>
             <div className={styles.main}>
                 <Header></Header>
+                <div className={styles.mainContainer}>
+                    <div className={styles.sloganContainer}>
+                        <h1 className={styles.slogan}>
+                            Start building with our APIs for absolutely free.
+                        </h1>
+                        <div className={styles.emailInputContainer}>
+                            <form>
+                                <label>Enter email adress</label>
+                                <input type="text"></input>
+                            </form>
+                            <button>Schedule a Demo</button>
+                        </div>
+                        <div className = {styles.contactTextContainer}>
+                            <h5>Have Any Questions?</h5>
+                            <h5>Contact Us</h5>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="/illustration-phone-mockup.svg" />
+                    </div>
+                </div>
             </div>
             <div className={styles.bgPattern}>
                 <Image

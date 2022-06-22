@@ -2,7 +2,7 @@
 
 .main {
     background-color: var.$primary-color-secondary;
-    height: 150vh;
+    height: 100vh;
     overflow: auto;
 }
 
@@ -10,7 +10,38 @@
     position: absolute;
     top: -200px;
     right: -200px;
-    z-index: 0;
+    z-index: 2;
+}
+
+.mainContainer {
+  display: flex;
+  height: calc(100vh - 96px);
+  position: relative;
+  z-index: 3;
+}
+
+.sloganContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slogan {
+  max-width: 30rem;
+  font-family: var.$font-serif;
+  font-size: 4rem;
+  color: var.$secondary-color-sanjuan;
+  font-weight: 500;
+}
+
+.emailInputContainer {
+  display: flex;
+}
+
+.contactTextContainer {
+  display: flex;
 }
 
 @media screen and (max-width: 768px) { // round pattern for Tablet
