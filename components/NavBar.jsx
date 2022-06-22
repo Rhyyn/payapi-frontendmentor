@@ -30,12 +30,12 @@ const NavBar = () => {
     };
 
     const handleClass = () => {
-      setIsClosed("");
-      setIsMenuOpen(false);
-    }
+        setIsClosed("");
+        setIsMenuOpen(false);
+    };
     const handleMenuClose = () => {
-        setIsClosed(styles.menuBackgroundClose)
-        setTimeout(handleClass, 350)
+        setIsClosed(styles.menuBackgroundClose);
+        setTimeout(handleClass, 350);
     };
 
     return (
@@ -65,7 +65,17 @@ const NavBar = () => {
                     height={23}
                 ></Image>
             ) : null}
-            {isMenuOpen && windowSize.width <= 720 ? <div className = {`${styles.menuBackground } ${closed}`}></div> : null}
+            {isMenuOpen && windowSize.width <= 720 ? (
+                <div className={`${styles.menuBackground} ${closed}`}>
+                    <hr className={styles.line}></hr>
+                    <div className={styles.menuItems}>
+                        {navItems.map((item, index) => {
+                            return <li key={index}>{item}</li>;
+                        })}
+                    </div>
+                    <button className={styles.scheduleButton}>Schedule a Demo</button>
+                </div>
+            ) : null}
         </React.Fragment>
     );
 };

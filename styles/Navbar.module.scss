@@ -19,6 +19,8 @@
     }
 }
 
+
+
 .menuBackground {
     width: 80vw;
     height: 100vh;
@@ -29,11 +31,14 @@
     z-index: 0;
     -webkit-animation: menuBackground 0.3s linear both;
     animation: menuBackground 0.3s linear both;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .menuIcon {
     cursor: pointer;
-    z-index: 1;
+    z-index: 3;
 }
 
 @-webkit-keyframes menuBackground {
@@ -61,6 +66,54 @@
 .menuBackgroundClose {
     -webkit-animation: menuBackgroundClose 0.3s linear both;
     animation: menuBackgroundClose 0.3s linear both;
+}
+
+.line {
+    width: 80%;
+    margin-top: 10rem;
+    border: 1px solid #979797;
+    opacity: 15%;
+}
+
+.menuItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+
+
+    li {
+        font-size: 2rem;
+        font-weight: 600;
+        margin: 1.5rem;
+        color: var.$primary-color-secondary;
+        opacity: 70%;
+    }
+
+    li:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+}
+
+.scheduleButton {
+    height: 48px;
+    width: 252px;
+    border-radius: 30px;
+    font-weight: 600;
+    background-color: var.$primary-color-main;
+    color: white;
+    border: none;
+    right: 0;
+    font-size: 0.9rem;
+    margin: 0 auto;
+}
+
+.scheduleButton:hover {
+    background-color: var.$secondary-color-charmpink;
+    cursor: pointer;
 }
 
 @-webkit-keyframes menuBackgroundClose {
