@@ -6,3 +6,10 @@
   height: 150vh;
   overflow:auto
 }
+
+.bgPattern {
+  position: fixed;
+  top: -200px;
+  right: -200px;
+  z-index: 0;
+}
