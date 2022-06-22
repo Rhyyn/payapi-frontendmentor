@@ -2,11 +2,14 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Header from "../components/Header";
+import React from "react";
 
 export default function Home() {
     return (
-        <div className={styles.main}>
-            <Header></Header>
+        <React.Fragment>
+            <div className={styles.main}>
+                <Header></Header>
+            </div>
             <div className={styles.bgPattern}>
                 <Image
                     src="/bg-pattern-circle.svg"
@@ -14,6 +17,6 @@ export default function Home() {
                     width={780}
                 ></Image>
             </div>
-        </div>
+        </React.Fragment>
     );
 }

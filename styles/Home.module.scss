@@ -1,15 +1,29 @@
-@use 'var';
-
+@use "var";
 
 .main {
-  background-color: var.$primary-color-secondary;
-  height: 150vh;
-  overflow:auto
+    background-color: var.$primary-color-secondary;
+    height: 150vh;
+    overflow: auto;
 }
 
-.bgPattern {
-  position: fixed;
-  top: -200px;
-  right: -200px;
-  z-index: 0;
+.bgPattern { // round pattern for Desktop
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    z-index: 0;
+}
+
+@media screen and (max-width: 768px) { // round pattern for Tablet
+    .bgPattern {
+        width: 780px;
+        left: 50%;
+        top: -20px;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@media screen and (max-width: 540px) {  // round pattern for Mobile
+  .bgPattern {
+      top: -80px;
+  }
 }
