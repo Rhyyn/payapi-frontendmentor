@@ -16,17 +16,22 @@ export default function Home() {
                         </h1>
                         <div className={styles.emailInputContainer}>
                             <form>
-                                <label>Enter email adress</label>
-                                <input type="text"></input>
+                                <input
+                                    placeholder="Enter Email Adress"
+                                    className={styles.emailInput}
+                                    type="text"
+                                ></input>
                             </form>
                             <button>Schedule a Demo</button>
                         </div>
-                        <div className = {styles.contactTextContainer}>
-                            <h5>Have Any Questions?</h5>
-                            <h5>Contact Us</h5>
+                        <div className={styles.contactTextContainer}>
+                            <p>Have Any Questions?</p>
+                            <p>
+                                <strong>Contact Us</strong>
+                            </p>
                         </div>
                     </div>
-                    <div>
+                    <div className = {styles.phoneContainer}>
                         <img src="/illustration-phone-mockup.svg" />
                     </div>
                 </div>
