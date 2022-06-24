@@ -4,73 +4,110 @@
     background-color: var.$primary-color-tertiary;
     height: 100vh;
     overflow: auto;
+    overflow-x: hidden;
 }
 
-.bgPattern { // round pattern for Desktop
-    position: absolute;
-    top: -200px;
-    right: -200px;
-    z-index: 2;
+// .bgPattern { // round pattern for Desktop
+//     position: absolute;
+//     top: -200px;
+//     right: -200px;
+//     z-index: 2;
+// }
+
+.bgPattern {
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        background-image: url("../public/bg-pattern-circle.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        top: -23.3%;
+        left: 55%;
+        width: 780px;
+        height: 780px;
+    }
 }
 
 .mainContainer {
-  display: flex;
-  height: calc(100vh - 96px);
-  position: relative;
-  z-index: 3;
+    display: flex;
+    height: 60%;
+    position: relative;
+    z-index: 3;
 }
 
 .sloganContainer {
-  width: 60%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .slogan {
-  max-width: 30rem;
-  font-family: var.$font-serif;
-  font-size: 4rem;
-  color: var.$secondary-color-sanjuan;
-  font-weight: 500;
+    max-width: 30rem;
+    font-family: var.$font-serif;
+    font-size: 4rem;
+    color: var.$secondary-color-sanjuan;
+    font-weight: 500;
 }
 
 .emailInputContainer {
-  display: flex;
-  max-width: 30rem;
+    display: flex;
+    max-width: 30rem;
 }
 
 .emailInput {
-  border-radius: 20px;
-  border: none;
-  height: 48px;
-  width: 400px;
-  text-indent: 25px;
-  color: var.$secondary-color-lightsanjuan;
+    border-radius: 20px;
+    border: none;
+    height: 48px;
+    width: 400px;
+    text-indent: 25px;
+    color: var.$secondary-color-lightsanjuan;
 }
 
 .contactTextContainer {
-  display: flex;
-  width: 30rem;
+    display: flex;
+    width: 30rem;
 
-  p {
-    padding-right: 8px;
-    color: var.$secondary-color-lightsanjuan;
-  }
+    p {
+        padding-right: 8px;
+        color: var.$secondary-color-lightsanjuan;
+    }
 }
 
 .phoneContainer {
-  height: calc(100vh - 96px);
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  img {
-    height: 660px;
-  }
+    z-index: 3;
+
+    img {
+        height: 660px;
+    }
 }
 
-@media screen and (max-width: 768px) { // round pattern for Tablet
+.partnerContainer {
+    display: flex;
+    height: 40%;
+    background-color: var.$secondary-color-mirage;
+    z-index: 3;
+}
+
+/* MOBILE */
+
+.mainContainerMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sloganContainerMobile {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    // round pattern for Tablet
     .bgPattern {
         width: 780px;
         left: 50%;
@@ -79,8 +116,21 @@
     }
 }
 
-@media screen and (max-width: 540px) {  // round pattern for Mobile
-  .bgPattern {
-      top: -80px;
-  }
+@media screen and (max-width: 540px) {
+    // round pattern for Mobile
+    .bgPattern {
+        top: -80px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phoneContainer {
+        display: flex;
+        justify-content: center;
+    }
 }
