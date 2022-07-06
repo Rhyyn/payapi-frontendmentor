@@ -1,0 +1,29 @@
+@use "var";
+
+.partnersContainer {
+    display: flex;
+}
+
+.partnersTitle {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.partnersText {
+    max-width: 400px;
+}
+
+.partnersLogo {
+    width: 160px;
+    padding: 1rem;
+}
+
+@mixin mobile {
+    @media screen and (max-width: map-get(var.$breakpoints, mobile )){
+
+    }
+}

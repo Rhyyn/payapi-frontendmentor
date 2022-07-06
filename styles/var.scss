@@ -1,12 +1,17 @@
 $primary-color-main: #ba4270;
 $primary-color-secondary: #fbfcfe;
-$primary-color-tertiary: #EDF3F8;
+$primary-color-tertiary: #edf3f8;
 
 $secondary-color-sanjuan: #36536b;
 $secondary-color-mirage: #1b262f;
 $secondary-color-lightsanjuan: #6c8294;
 $secondary-color-charmpink: #da6d97;
 
+$font-public: "Public Sans", sans-serif;
+$font-serif: "DM Serif Display", serif;
 
-$font-public: 'Public Sans', sans-serif;
-$font-serif: 'DM Serif Display', serif;
+$breakpoints: (
+    mobile: 540px,
+    tablet: 768px,
+    desktop: 1100px,
+);
