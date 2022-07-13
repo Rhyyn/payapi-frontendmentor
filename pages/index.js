@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Header from "../components/Header";
 import Partners from "../components/Partners";
+import Implement from "../components/Implement";
 import React, { useState, useEffect } from "react";
 
 export default function Home() {
@@ -89,6 +90,7 @@ export default function Home() {
                     </div>
                 )}
                 <Partners></Partners>
+                <Implement></Implement>
                 {/* <div className={styles.partnerContainer}>
 
                 </div> */}
