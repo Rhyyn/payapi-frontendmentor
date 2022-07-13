@@ -31,16 +31,17 @@
 
 .mainContainer {
     display: flex;
+    width: 55vw;
+    margin: 0 auto;
     height: 60%;
     position: relative;
     z-index: 3;
 }
 
 .sloganContainer {
-    width: 60%;
+    width: 60vw;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
