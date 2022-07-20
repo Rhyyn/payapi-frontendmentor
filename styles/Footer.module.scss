@@ -1,0 +1,45 @@
+@use "var";
+
+.footerContainer {
+    width: 100vw;
+    height: 100px;
+    background-color: var.$secondary-color-mirage;
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    width: 77vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftContainer {
+    display: flex;
+}
+
+.navContainer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3rem;
+    li {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1.4rem;
+        color: var.$primary-color-secondary;
+        opacity: 70%;
+    }
+}
+
+.socialsContainer {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.socialLogo {
+    padding: 0.8rem;
+    width: 24;
+}
