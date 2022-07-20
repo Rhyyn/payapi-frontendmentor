@@ -6,6 +6,7 @@ import Partners from "../components/Partners";
 import Implement from "../components/Implement";
 import SimpleUI from "../components/SimpleUI";
 import Perks from "../components/Perks";
+import ReadyToStart from "../components/ReadyToStart";
 import React, { useState, useEffect } from "react";
 
 export default function Home() {
@@ -95,6 +96,7 @@ export default function Home() {
                 <Implement></Implement>
                 <SimpleUI></SimpleUI>
                 <Perks></Perks>
+                <ReadyToStart></ReadyToStart>
                 {/* <div className={styles.partnerContainer}>
 
                 </div> */}

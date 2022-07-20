@@ -1,0 +1,35 @@
+@use 'var';
+
+.mainContainer {
+    width: 62vw;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.Title {
+    font-family: var.$font-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: var.$secondary-color-sanjuan;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.emailInputContainer {
+    display: flex;
+    max-width: 30rem;
+    align-items: center;
+}
+
+.emailInput {
+    border-radius: 20px;
+    border: none;
+    height: 48px;
+    width: 400px;
+    text-indent: 25px;
+    color: var.$secondary-color-lightsanjuan;
+}
