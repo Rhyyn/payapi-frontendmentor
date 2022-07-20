@@ -5,6 +5,7 @@ import Header from "../components/Header";
 import Partners from "../components/Partners";
 import Implement from "../components/Implement";
 import SimpleUI from "../components/SimpleUI";
+import Perks from "../components/Perks";
 import React, { useState, useEffect } from "react";
 
 export default function Home() {
@@ -93,6 +94,7 @@ export default function Home() {
                 <Partners></Partners>
                 <Implement></Implement>
                 <SimpleUI></SimpleUI>
+                <Perks></Perks>
                 {/* <div className={styles.partnerContainer}>
 
                 </div> */}

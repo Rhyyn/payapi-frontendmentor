@@ -1,0 +1,40 @@
+@use "var";
+
+.mainContainer {
+    width: 70vw;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+.individualContainer {
+    width: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.Title {
+    font-family: var.$font-public;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var.$secondary-color-sanjuan;
+    margin: 0;
+    padding-top: 2rem;
+}
+
+.Text {
+    color: var.$secondary-color-lightsanjuan;
+    font-family: var.$font-public;
+    line-height: 30px;
+    text-align: center;
+}
+
+.image {
+    width: 106px;
+}
