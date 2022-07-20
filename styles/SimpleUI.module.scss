@@ -1,0 +1,37 @@
+@use "var";
+
+.mainContainer {
+    width: 1015px;
+    height: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+.TextContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Title {
+    font-family: var.$font-serif;
+    font-weight: 500;
+    font-size: 3rem;
+    color: var.$secondary-color-sanjuan;
+    margin: 0;
+}
+
+.Text {
+    color: var.$secondary-color-lightsanjuan;
+    font-family: var.$font-public;
+    line-height: 30px;
+}
+
+.imageContainer {
+    width: 50%;
+}
