@@ -31,6 +31,11 @@
         color: var.$primary-color-secondary;
         opacity: 70%;
     }
+
+    li:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
 }
 
 .socialsContainer {
@@ -41,5 +46,16 @@
 
 .socialLogo {
     padding: 0.8rem;
-    width: 24;
+    fill: "green";
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.svg {
+    fill: white;
+    &:hover {
+        fill: var.$secondary-color-charmpink;
+    }
 }
