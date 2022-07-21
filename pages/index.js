@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.scss";
 import Header from "../components/Header";
+import Input from "../components/Input";
 import Partners from "../components/Partners";
 import Implement from "../components/Implement";
 import SimpleUI from "../components/SimpleUI";
@@ -39,16 +40,7 @@ export default function Home() {
                                 Start building with our APIs for absolutely
                                 free.
                             </h1>
-                            <div className={styles.emailInputContainer}>
-                                <form>
-                                    <input
-                                        placeholder="Enter Email Adress"
-                                        className={styles.emailInput}
-                                        type="text"
-                                    ></input>
-                                </form>
-                                <button>Schedule a Demo</button>
-                            </div>
+                            <Input></Input>
                             <div className={styles.contactTextContainer}>
                                 <p>Have Any Questions?</p>
                                 <p>
