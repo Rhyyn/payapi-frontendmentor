@@ -11,13 +11,13 @@
 
 .subPartnersContainer {
     display: flex;
-    width: 55vw;
+    width: 1015px;
     align-items: center;
     margin: 0 auto;
 }
 
 .partnersTitle {
-    width: 60vw;
+    min-width: 458px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -59,7 +59,7 @@
 }
 
 .partnersLogosContainer {
-    // max-width: 600px;
+    min-width: 485px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;

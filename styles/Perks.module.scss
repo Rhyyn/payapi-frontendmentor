@@ -11,7 +11,7 @@
 }
 
 .individualContainer {
-    width: 410px;
+    min-width: 410px;
     display: flex;
     flex-direction: column;
     justify-content: center;

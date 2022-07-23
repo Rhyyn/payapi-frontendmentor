@@ -1,7 +1,20 @@
 @use "var";
+@import "/styles/var.scss";
 
 .emailInputContainer {
-    max-width: 30rem;
+    
+
+    @include respond-to("mobile") {
+    }
+    
+    @include respond-to("tablet") {
+        max-width: 37rem;
+        margin-left: 50px;
+    }
+    
+    @include respond-to("desktop") {
+        max-width: 30rem;
+    }
 }
 
 .form {
@@ -12,8 +25,8 @@
 .emailInput {
     border-radius: 25px;
     border: none;
-    height: 48px;
     width: 440px;
+    height: 48px;
     text-indent: 25px;
     color: var.$secondary-color-sanjuan;
     font-family: var.$font-public;
@@ -27,6 +40,7 @@
         border: 2px solid var.$primary-color-main;
         color: var.$secondary-color-mirage;
     }
+
 }
 
 .button {
