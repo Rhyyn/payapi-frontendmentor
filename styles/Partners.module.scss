@@ -1,23 +1,51 @@
 @use "var";
+@import "/styles/var.scss";
 
 .partnersContainer {
     width: 100vw;
-    height: calc(400px);
     background-color: var.$secondary-color-mirage;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
+
+    @include respond-to("mobile") {
+        height: 680px;
+    }
+
+    @include respond-to("tablet") {
+        height: 600px;
+    }
+
+    @include respond-to("desktop") {
+        height: 400px;
+    }
 }
 
 .subPartnersContainer {
     display: flex;
-    width: 1015px;
-    align-items: center;
     margin: 0 auto;
+
+    @include respond-to("mobile") {
+        flex-direction: column-reverse;
+        max-height: 640px;
+        justify-content: center;
+    }
+
+    @include respond-to("tablet") {
+        flex-direction: column-reverse;
+        height: 550px;
+    }
+
+    @include respond-to("desktop") {
+        width: 1015px;
+        height: 400px;
+        align-items: center;
+        flex-direction: row;
+    }
 }
 
 .partnersTitle {
-    min-width: 458px;
+    width: 458px;
     display: flex;
     flex-direction: column;
     color: white;
@@ -26,19 +54,54 @@
     h2 {
         margin: 0;
         font-weight: 500;
-        font-size: 2.5rem;
+
+        @include respond-to("mobile") {
+            font-size: 2rem;
+        }
+
+        @include respond-to("tablet") {
+            font-size: 2.5rem;
+        }
+
+        @include respond-to("desktop") {
+        }
+    }
+
+    @include respond-to("mobile") {
+        align-items: center;
+        margin: 1.6rem auto 0;
+        text-align: center;
+        max-width: 90vw;
+    }
+
+    @include respond-to("tablet") {
+    }
+
+    @include respond-to("desktop") {
+        align-items: flex-start;
+        text-align: left;
     }
 }
 
 .partnersText {
-    max-width: 500px;
     color: white;
     font-family: var.$font-public;
-    font-size: 1rem;
+
     font-weight: 200;
     opacity: 65%;
     line-height: 30px;
     margin-bottom: 2rem;
+
+    @include respond-to("mobile") {
+        max-width: 90vw;
+    }
+
+    @include respond-to("tablet") {
+        max-width: 500px;
+    }
+
+    @include respond-to("desktop") {
+    }
 }
 
 .buttonAbout {
@@ -63,14 +126,23 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 0 auto;
+
+    @include respond-to("mobile") {
+        max-width: 80vw;
+        justify-content: center;
+    }
+
+    @include respond-to("tablet") {
+        max-width: 600px;
+        justify-content: center;
+    }
+
+    @include respond-to("desktop") {
+    }
 }
 
 .partnersLogo {
-    width: 160px;
-    padding: 1rem;
-}
-
-@mixin mobile {
-    @media screen and (max-width: map-get(var.$breakpoints, mobile )) {
-    }
+    width: 180px;
+    padding: 1.5rem;
 }
