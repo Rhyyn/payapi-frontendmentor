@@ -2,30 +2,36 @@
 @import "/styles/var.scss";
 
 .emailInputContainer {
-    
-
     @include respond-to("mobile") {
     }
-    
+
     @include respond-to("tablet") {
         max-width: 37rem;
         margin-left: 50px;
     }
-    
+
     @include respond-to("desktop") {
         max-width: 30rem;
+        margin-left: 0px;
     }
 }
 
 .form {
     display: flex;
     align-items: center;
+
+    @include respond-to("mobile") {
+        flex-direction: column;
+    }
+
+    @include respond-to("tablet") {
+        flex-direction: row;
+    }
 }
 
 .emailInput {
     border-radius: 25px;
     border: none;
-    width: 440px;
     height: 48px;
     text-indent: 25px;
     color: var.$secondary-color-sanjuan;
@@ -41,6 +47,13 @@
         color: var.$secondary-color-mirage;
     }
 
+    @include respond-to("mobile") {
+        width: 330px;
+    }
+
+    @include respond-to("tablet") {
+        width: 440px;
+    }
 }
 
 .button {
@@ -48,9 +61,7 @@
     color: white;
     border: none;
     border-radius: 25px;
-    width: 240px;
     height: 48px;
-    position: relative;
     right: 50px;
     font-family: var.$font-public;
     font-size: 1rem;
@@ -61,5 +72,17 @@
     &:hover {
         cursor: pointer;
         background-color: var.$secondary-color-charmpink;
+    }
+
+    @include respond-to("mobile") {
+        position: inherit;
+        width: 330px;
+        margin-top: 20px;
+    }
+    
+    @include respond-to("tablet") {
+        position: relative;
+        width: 240px;
+        margin-top: 0px
     }
 }
