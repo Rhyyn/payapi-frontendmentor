@@ -1,12 +1,30 @@
 @use "var";
+@import "/styles/var.scss";
 
 .mainContainer {
-    width: 1015px;
-    height: 445px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.8rem auto;
+
+    @include respond-to("mobile") {
+        width: 100vw;
+        height: 550px;
+        flex-direction: column;
+        margin: 4rem 0px 2rem;
+        
+    }
+    
+    @include respond-to("tablet") {
+        margin: 5rem 0px 4rem;
+       
+    }
+    
+    @include respond-to("desktop") {
+        width: 1015px;
+        height: 445px;
+        flex-direction: row;
+        margin: 2.8rem auto;
+    }
 }
 
 .TextContainer {
@@ -14,15 +32,60 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding-left: 7rem;
+
+    @include respond-to("mobile") {
+        width: 90%;
+        text-align: center;
+        padding-left: 0px;
+        padding-top: 2rem;
+    }
+    
+    @include respond-to("tablet") {
+        width: 620px;
+        
+    }
+    
+    @include respond-to("desktop") {
+        text-align: left;
+        width: 100%;
+        padding-left: 7rem;
+        padding-top: 0px;
+    }
 }
+
+.image {
+    
+    @include respond-to("mobile") {
+        width: 325px;
+    }
+    
+    @include respond-to("tablet") {
+        width: auto;
+    }
+    
+    @include respond-to("desktop") {
+        
+    }
+}
+
 
 .Title {
     font-family: var.$font-serif;
     font-weight: 500;
-    font-size: 3rem;
     color: var.$secondary-color-sanjuan;
     margin: 0;
+
+    @include respond-to("mobile") {
+        font-size: 2.2rem;
+    }
+    
+    @include respond-to("tablet") {
+        font-size: 3rem;
+    }
+    
+    @include respond-to("desktop") {
+        font-size: 3rem;
+    }
 }
 
 .Text {

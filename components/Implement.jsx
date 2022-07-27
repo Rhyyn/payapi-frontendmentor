@@ -4,7 +4,7 @@ import styles from "../styles/Implement.module.scss";
 const Implement = () => {
     return (
         <div className={styles.mainContainer}>
-            <img src="/illustration-easy-to-implement.svg" />
+            <img className = {styles.image} src="/illustration-easy-to-implement.svg" />
             <div className = {styles.TextContainer}>
                 <h3 className={styles.Title}>Easy to implement</h3>
                 <p className = {styles.Text}>
