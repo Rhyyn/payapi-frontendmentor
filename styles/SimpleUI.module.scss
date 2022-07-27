@@ -6,7 +6,6 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    
 
     @include respond-to("mobile") {
         width: 95vw;
@@ -35,11 +34,11 @@
         width: 90vw;
         text-align: center;
     }
-    
+
     @include respond-to("tablet") {
         width: 600px;
     }
-    
+
     @include respond-to("desktop") {
         text-align: left;
         width: 500px;
@@ -52,6 +51,18 @@
     font-size: 3rem;
     color: var.$secondary-color-sanjuan;
     margin: 0;
+
+    @include respond-to("mobile") {
+        font-size: 2.2rem;
+    }
+
+    @include respond-to("tablet") {
+        font-size: 3rem;
+    }
+
+    @include respond-to("desktop") {
+        font-size: 3rem;
+    }
 }
 
 .Text {
@@ -61,36 +72,32 @@
 }
 
 .imageContainer {
-
-
     @include respond-to("mobile") {
         width: 100%;
         display: flex;
         justify-content: center;
         padding-left: 1.2rem;
     }
-    
+
     @include respond-to("tablet") {
         width: 50%;
     }
-    
+
     @include respond-to("desktop") {
         width: 50%;
     }
 }
 
 .image {
-
     @include respond-to("mobile") {
         width: 90%;
     }
-    
+
     @include respond-to("tablet") {
         width: 600px;
     }
-    
+
     @include respond-to("desktop") {
         width: auto;
     }
-
 }
