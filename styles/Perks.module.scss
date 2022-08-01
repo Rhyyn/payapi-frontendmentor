@@ -1,22 +1,48 @@
 @use "var";
+@import "/styles/var.scss";
 
 .mainContainer {
-    width: 70vw;
-    height: 550px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    padding-top: 10rem;
+
+    @include respond-to("mobile") {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    @include respond-to("tablet") {
+    }
+
+    @include respond-to("desktop") {
+        flex-direction: row;
+        height: 550px;
+        width: 70vw;
+        margin-top: 0;
+        padding-top: 10rem;
+    }
 }
 
 .individualContainer {
-    min-width: 410px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem;
+
+    @include respond-to("mobile") {
+        max-width: 350px;
+        margin-top: 2.3rem;
+    }
+
+    @include respond-to("tablet") {
+        min-width: 300px;
+        padding: 1rem;
+    }
+
+    @include respond-to("desktop") {
+        height: 373px;
+    }
 }
 
 .Title {
@@ -33,6 +59,17 @@
     font-family: var.$font-public;
     line-height: 30px;
     text-align: center;
+
+    @include respond-to("mobile") {
+        height: auto;
+    }
+
+    @include respond-to("tablet") {
+    }
+
+    @include respond-to("desktop") {
+        height: 150px;
+    }
 }
 
 .image {
