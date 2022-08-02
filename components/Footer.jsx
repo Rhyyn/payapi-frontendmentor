@@ -9,12 +9,12 @@ const Footer = () => {
         <footer className={styles.footerContainer}>
             <div className={styles.mainContainer}>
                 <div className={styles.leftContainer}>
-                    <Image
+                    <img
                         className={styles.logo}
                         src="/footerLogo.svg"
                         width={135}
                         height={38}
-                    ></Image>
+                    />
                     <div className={styles.navContainer}>
                         {navItems.map((item, index) => {
                             return <li key={index}>{item}</li>;

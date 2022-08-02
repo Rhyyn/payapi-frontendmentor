@@ -1,21 +1,57 @@
 @use "var";
+@import "/styles/var.scss";
 
 .footerContainer {
     width: 100vw;
-    height: 100px;
     background-color: var.$secondary-color-mirage;
     display: flex;
     justify-content: center;
+
+    @include respond-to("mobile") {
+        height: 270px;
+    }
+
+    @include respond-to("tablet") {
+        height: 100px;
+    }
+
+    @include respond-to("desktop") {
+    }
 }
 
 .mainContainer {
     width: 77vw;
     display: flex;
     justify-content: space-between;
+
+    @include respond-to("mobile") {
+        flex-direction: column;
+    }
+
+    @include respond-to("tablet") {
+        flex-direction: row;
+    }
+
+    @include respond-to("desktop") {
+    }
 }
 
 .leftContainer {
     display: flex;
+    align-items: center;
+
+    @include respond-to("mobile") {
+        flex-direction: column;
+        margin-top: 1rem;
+    }
+
+    @include respond-to("tablet") {
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    @include respond-to("desktop") {
+    }
 }
 
 .navContainer {
@@ -23,25 +59,63 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 3rem;
     li {
         font-size: 1rem;
         font-weight: 600;
-        margin: 1.4rem;
         color: var.$primary-color-secondary;
         opacity: 70%;
+
+        @include respond-to("mobile") {
+            margin: 1rem;
+        }
+
+        @include respond-to("tablet") {
+            margin: 1.4rem;
+        }
+
+        @include respond-to("desktop") {
+        }
     }
 
     li:hover {
         opacity: 100%;
         cursor: pointer;
     }
+
+    @include respond-to("mobile") {
+        flex-direction: column;
+    }
+
+    @include respond-to("tablet") {
+        padding-left: 3rem;
+        flex-direction: row;
+    }
+
+    @include respond-to("desktop") {
+    }
+}
+
+.logo {
+    width: 135px;
 }
 
 .socialsContainer {
     width: 200px;
     display: flex;
     align-items: center;
+
+    @include respond-to("mobile") {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    @include respond-to("tablet") {
+        margin: 0;
+        justify-content: baseline;
+    }
+
+    @include respond-to("desktop") {
+    }
 }
 
 .socialLogo {
