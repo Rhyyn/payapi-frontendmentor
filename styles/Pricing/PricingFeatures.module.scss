@@ -1,0 +1,63 @@
+@use "../var.scss";
+
+
+.mainContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    @include var.respond-to("mobile") {
+        width: 200px;
+    }
+
+    @include var.respond-to("tablet") {
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}
+
+.checkContainer {
+    width: 14px;
+    padding-right: 2.5rem;
+}
+
+.iconCheck {
+    @include var.respond-to("mobile") {
+        height: 11px;
+    }
+
+    @include var.respond-to("tablet") {
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}
+
+.textValid {
+    @include var.respond-to("mobile") {
+        color: var.$secondary-color-sanjuan;
+        width: 105px;
+    }
+    
+    @include var.respond-to("tablet") {
+    }
+    
+    @include var.respond-to("desktop") {
+    }
+}
+
+
+.textInvalid {
+    @include var.respond-to("mobile") {
+        color: var.$secondary-color-sanjuan;
+        opacity: 50%;
+        width: 105px;
+    }
+    
+    @include var.respond-to("tablet") {
+    }
+    
+    @include var.respond-to("desktop") {
+    }
+}
