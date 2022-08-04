@@ -1,20 +1,35 @@
 @use "../var.scss";
 
-
 .title {
     font-family: var.$font-serif;
     color: var.$secondary-color-sanjuan;
     text-align: center;
+    font-weight: 500;
+    width: 300px;
+    margin: 0 auto;
 }
 
 .paragraphTitle {
     text-align: center;
     font-family: var.$font-serif;
     color: var.$secondary-color-sanjuan;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: 3rem;
 }
 
 .paragraph {
     text-align: center;
     color: var.$secondary-color-lightsanjuan;
     font-family: var.$font-public;
+    @include var.respond-to("mobile") {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    @include var.respond-to("tablet") {
+    }
+
+    @include var.respond-to("desktop") {
+    }
 }
