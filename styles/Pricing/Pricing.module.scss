@@ -1,0 +1,7 @@
+@use "../var.scss";
+
+.Title {
+    color: var.$secondary-color-sanjuan;
+    text-align: center;
+    font-family: var.$font-serif;
+}
