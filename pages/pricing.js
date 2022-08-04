@@ -111,15 +111,16 @@ const plans = [
     },
 ];
 
-
 const pricing = () => {
     return (
         <div>
             <Header></Header>
-            <h1 className = {styles.Title}>Pricing</h1>
-            {plans.map((item, index) => {
-                return (<PlanPricing data={item} key={index}></PlanPricing>)
-            })}
+            <h1 className={styles.title}>Pricing</h1>
+            <div className = {styles.plansContainer}>
+                {plans.map((item, index) => {
+                    return <PlanPricing data={item} key={index}></PlanPricing>
+                })}
+            </div>
             <ReadyToStart></ReadyToStart>
             <Footer></Footer>
         </div>
