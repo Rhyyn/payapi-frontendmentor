@@ -20,11 +20,18 @@
 }
 
 .planName {
-    text-align: center;
-    font-family: var.$font-serif;
-    color: var.$primary-color-main;
-    font-weight: 400;
-    margin-bottom: 0;
+    @include var.respond-to("mobile") {
+        text-align: center;
+        font-family: var.$font-serif;
+        color: var.$primary-color-main;
+        font-weight: 400;
+        margin-bottom: 0;
+        font-size: 1rem;
+    }
+
+    @include var.respond-to("tablet") {
+        font-size: 1.5rem;
+    }
 }
 
 .price {
@@ -51,4 +58,8 @@
     font-weight: 600;
     font-size: 1rem;
     background-color: transparent;
+    &:hover {
+        background-color: var.$secondary-color-sanjuan;
+        color: white;
+    }
 }
