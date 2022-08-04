@@ -1,5 +1,4 @@
-@use "var";
-@import "/styles/var.scss";
+@use "../var.scss";
 
 .footerContainer {
     width: 100vw;
@@ -7,15 +6,15 @@
     display: flex;
     justify-content: center;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         height: 270px;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         height: 100px;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
     }
 }
 
@@ -24,15 +23,15 @@
     display: flex;
     justify-content: space-between;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         flex-direction: column;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         flex-direction: row;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
     }
 }
 
@@ -40,17 +39,17 @@
     display: flex;
     align-items: center;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         flex-direction: column;
         margin-top: 1rem;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         flex-direction: row;
         margin-top: 0;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
     }
 }
 
@@ -65,15 +64,15 @@
         color: var.$primary-color-secondary;
         opacity: 70%;
 
-        @include respond-to("mobile") {
+        @include var.respond-to("mobile") {
             margin: 1rem;
         }
 
-        @include respond-to("tablet") {
+        @include var.respond-to("tablet") {
             margin: 1.4rem;
         }
 
-        @include respond-to("desktop") {
+        @include var.respond-to("desktop") {
         }
     }
 
@@ -82,16 +81,16 @@
         cursor: pointer;
     }
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         flex-direction: column;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         padding-left: 3rem;
         flex-direction: row;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
     }
 }
 
@@ -104,17 +103,17 @@
     display: flex;
     align-items: center;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         margin: 0 auto;
         justify-content: center;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         margin: 0;
         justify-content: baseline;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
     }
 }
 

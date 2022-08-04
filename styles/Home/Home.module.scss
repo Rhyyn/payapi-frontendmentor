@@ -1,5 +1,4 @@
-@use "var";
-@import "/styles/var.scss";
+@use "../var.scss";
 
 .main {
     background-color: var.$primary-color-tertiary;
@@ -20,7 +19,7 @@
     &::before {
         content: "";
         position: absolute;
-        background-image: url("../public/bg-pattern-circle.svg");
+        background-image: url("../../public/bg-pattern-circle.svg");
         background-size: 100%;
         background-repeat: no-repeat;
         top: -23.3%;
@@ -33,20 +32,20 @@
 .mainContainer {
     display: flex;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         flex-direction: column-reverse;
         align-items: center;
         margin-top: 2rem;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center;
         height: 90%;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         flex-direction: row;
         width: 1015px;
         margin: 0 auto;
@@ -59,19 +58,19 @@
 .sloganContainer {
     display: flex;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         flex-direction: column;
         max-width: 90vw;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         width: 600px;
         align-items: center;
         flex-direction: column;
         justify-content: center;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         width: 60vw;
         justify-content: center;
         flex-direction: column;
@@ -84,18 +83,18 @@
     color: var.$secondary-color-sanjuan;
     font-weight: 500;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         font-size: 1.5rem;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         max-width: 680px;
         text-align: center;
         font-size: 3rem;
         // margin: 1rem 0 1rem;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         max-width: 28rem;
         text-align: left;
         font-size: 4rem;
@@ -112,17 +111,17 @@
         color: var.$secondary-color-lightsanjuan;
     }
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         justify-content: center;
         padding-left: 0px;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         width: 280px;
         padding-left: 0px;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         width: 30rem;
         padding-left: 1.7rem;
         justify-content: flex-start;
@@ -134,20 +133,20 @@
     display: flex;
     align-items: center;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         z-index: 2;
         img {
             height: 350px;
         }
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         img {
             height: 370px;
         }
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         img {
             height: 500px;
         }
@@ -202,31 +201,3 @@
     }
 }
 
-// @media screen and (max-width: 768px) {
-//     // round pattern for Tablet
-//     .bgPattern {
-//         width: 780px;
-//         left: 50%;
-//         top: -20px;
-//         transform: translate(-50%, -50%);
-//     }
-// }
-
-// @media screen and (max-width: 540px) {
-//     // round pattern for Mobile
-//     .bgPattern {
-//         top: -80px;
-//     }
-// }
-
-// @media screen and (max-width: 1100px) {
-//     .mainContainer {
-//         flex-direction: column;
-//         align-items: center;
-//     }
-
-//     .phoneContainer {
-//         display: flex;
-//         justify-content: center;
-//     }
-// }

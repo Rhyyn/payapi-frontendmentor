@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/Header";
+import Header from "../components/Header/Header";
 import PlanPricing from "../components/Pricing/PlanPricing";
-import ReadyToStart from "../components/ReadyToStart";
-import Footer from "../components/Footer";
+import ReadyToStart from "../components/Utilities/ReadyToStart";
+import Footer from "../components/Utilities/Footer";
 import styles from "../styles/Pricing/Pricing.module.scss";
 
 // Data of the 3 available Plans

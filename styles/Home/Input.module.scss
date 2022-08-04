@@ -1,16 +1,15 @@
-@use "var";
-@import "/styles/var.scss";
+@use "../var.scss";
 
 .emailInputContainer {
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         max-width: 37rem;
         margin-left: 50px;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         max-width: 30rem;
         margin-left: 0px;
     }
@@ -20,11 +19,11 @@
     display: flex;
     align-items: center;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         flex-direction: column;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         flex-direction: row;
     }
 }
@@ -47,11 +46,11 @@
         color: var.$secondary-color-mirage;
     }
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         width: 330px;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         width: 440px;
     }
 }
@@ -74,13 +73,13 @@
         background-color: var.$secondary-color-charmpink;
     }
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         position: inherit;
         width: 330px;
         margin-top: 20px;
     }
     
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         position: relative;
         width: 240px;
         margin-top: 0px

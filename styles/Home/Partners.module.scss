@@ -1,5 +1,4 @@
-@use "var";
-@import "/styles/var.scss";
+@use "../var.scss";
 
 .partnersContainer {
     width: 100vw;
@@ -8,15 +7,15 @@
     display: flex;
     justify-content: center;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         height: 680px;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         height: 600px;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         height: 400px;
     }
 }
@@ -25,18 +24,18 @@
     display: flex;
     margin: 0 auto;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         flex-direction: column-reverse;
         max-height: 640px;
         justify-content: center;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         flex-direction: column-reverse;
         height: 550px;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         width: 1015px;
         height: 400px;
         align-items: center;
@@ -55,29 +54,29 @@
         margin: 0;
         font-weight: 500;
 
-        @include respond-to("mobile") {
+        @include var.respond-to("mobile") {
             font-size: 2rem;
         }
 
-        @include respond-to("tablet") {
+        @include var.respond-to("tablet") {
             font-size: 2.5rem;
         }
 
-        @include respond-to("desktop") {
+        @include var.respond-to("desktop") {
         }
     }
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         align-items: center;
         margin: 1.6rem auto 0;
         text-align: center;
         max-width: 90vw;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         align-items: flex-start;
         text-align: left;
     }
@@ -92,15 +91,15 @@
     line-height: 30px;
     margin-bottom: 2rem;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         max-width: 90vw;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         max-width: 500px;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
     }
 }
 
@@ -128,17 +127,17 @@
     flex-wrap: wrap;
     margin: 0 auto;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         max-width: 80vw;
         justify-content: center;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         max-width: 600px;
         justify-content: center;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
     }
 }
 

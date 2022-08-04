@@ -1,6 +1,5 @@
 import React from "react";
-import styles from "../styles/Footer.module.scss";
-import Image from "next/image";
+import styles from "../../styles/Utilities/Footer.module.scss";
 
 const navItems = ["Pricing", "About", "Contact"];
 

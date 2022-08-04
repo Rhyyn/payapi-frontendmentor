@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Header.module.scss";
+import styles from "../../styles/Header/Header.module.scss";
 import NavBar from "./NavBar";
 import Image from "next/image";
 

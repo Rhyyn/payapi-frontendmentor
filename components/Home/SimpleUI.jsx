@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/SimpleUI.module.scss";
+import styles from "../../styles/Home/SimpleUI.module.scss";
 
 const SimpleUI = () => {
     return (

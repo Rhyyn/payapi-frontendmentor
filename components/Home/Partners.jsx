@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/Partners.module.scss";
+import styles from "../../styles/Home/Partners.module.scss";
 
 const Partners = () => {
     const PartnersLogo = [

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../styles/ReadyToStart.module.scss";
-import Input from "./Input.jsx";
+import styles from "../../styles/Utilities/ReadyToStart.module.scss";
+import Input from "../Home/Input";
 
 const ReadyToStart = () => {
     return (

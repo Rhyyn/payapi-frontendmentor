@@ -1,23 +1,22 @@
-@use "var";
-@import "/styles/var.scss";
+@use "../var.scss";
 
 .mainContainer {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         width: 100vw;
         height: 550px;
         flex-direction: column;
         margin: 4rem 0px 2rem;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         margin: 5rem 0px 4rem;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         width: 1015px;
         height: 445px;
         flex-direction: row;
@@ -31,18 +30,18 @@
     justify-content: center;
     flex-direction: column;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         width: 90%;
         text-align: center;
         padding-left: 0px;
         padding-top: 2rem;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         width: 620px;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         text-align: left;
         width: 100%;
         padding-left: 7rem;
@@ -51,15 +50,15 @@
 }
 
 .image {
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         width: 325px;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         width: auto;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
     }
 }
 
@@ -69,15 +68,15 @@
     color: var.$secondary-color-sanjuan;
     margin: 0;
 
-    @include respond-to("mobile") {
+    @include var.respond-to("mobile") {
         font-size: 2.2rem;
     }
 
-    @include respond-to("tablet") {
+    @include var.respond-to("tablet") {
         font-size: 3rem;
     }
 
-    @include respond-to("desktop") {
+    @include var.respond-to("desktop") {
         font-size: 3rem;
     }
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import styles from "../styles/Home.module.scss";
-import Input from "../components/Input";
+import styles from "../../styles/Home/Home.module.scss";
+import Input from "../Home/Input";
 
 const Intro = () => {
     return (
