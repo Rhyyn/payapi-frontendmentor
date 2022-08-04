@@ -70,7 +70,7 @@ const NavBar = () => {
                     <hr className={styles.line}></hr>
                     <div className={styles.menuItems}>
                         {navItems.map((item, index) => {
-                            return <li key={index}>{item}</li>;
+                            return <a href={'/' + item.toLowerCase()} key={index}>{item}</a>;
                         })}
                     </div>
                     <button className={styles.scheduleButton}>Schedule a Demo</button>

@@ -85,7 +85,7 @@
     margin-bottom: 2.5rem;
 
 
-    li {
+    a {
         font-size: 2rem;
         font-weight: 600;
         margin: 1.5rem;
@@ -93,7 +93,7 @@
         opacity: 70%;
     }
 
-    li:hover {
+    a:hover {
         opacity: 100%;
         cursor: pointer;
     }
@@ -110,11 +110,10 @@
     right: 0;
     font-size: 0.9rem;
     margin: 0 auto;
-}
-
-.scheduleButton:hover {
-    background-color: var.$secondary-color-charmpink;
-    cursor: pointer;
+    &:hover {
+        background-color: var.$secondary-color-charmpink;
+        cursor: pointer;
+    }
 }
 
 @-webkit-keyframes menuBackgroundClose {
