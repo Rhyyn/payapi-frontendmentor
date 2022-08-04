@@ -1,5 +1,12 @@
 @use "../var.scss";
 
+.main {
+    background-color: var.$primary-color-tertiary;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
 .title {
     color: var.$secondary-color-sanjuan;
     text-align: center;

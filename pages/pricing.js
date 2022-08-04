@@ -113,7 +113,7 @@ const plans = [
 
 const pricing = () => {
     return (
-        <div>
+        <div className = {styles.main}>
             <Header></Header>
             <h1 className={styles.title}>Pricing</h1>
             <div className = {styles.plansContainer}>
