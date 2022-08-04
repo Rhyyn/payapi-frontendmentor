@@ -43,7 +43,7 @@ const NavBar = () => {
             {windowSize.width >= 720 ? (
                 <div className={styles.navBarContainer}>
                     {navItems.map((item, index) => {
-                        return <li key={index}>{item}</li>;
+                        return <a href={'/' + item.toLowerCase()} key={index}>{item}</a>;
                     })}
                 </div>
             ) : null}

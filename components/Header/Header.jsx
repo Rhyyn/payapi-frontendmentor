@@ -2,15 +2,23 @@ import React from "react";
 import styles from "../../styles/Header/Header.module.scss";
 import NavBar from "./NavBar";
 import Image from "next/image";
+import Link from "next/link";
 
 const Header = () => {
     return (
         <header className={styles.headerContainer}>
             <div className={styles.mainNavContainer}>
-                <Image src="/logo.svg" width={135} height={38}></Image>
+                <a href="/">
+                    <Image
+                        src="/logo.svg"
+                        width={135}
+                        height={38}
+                        className={styles.logo}
+                    ></Image>
+                </a>
                 <NavBar></NavBar>
             </div>
-            <button className = {styles.scheduleButton}>Schedule a Demo</button>
+            <button className={styles.scheduleButton}>Schedule a Demo</button>
         </header>
     );
 };

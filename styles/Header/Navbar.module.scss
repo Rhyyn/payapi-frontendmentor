@@ -8,13 +8,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    li {
+    a {
         padding: 1rem;
         padding-right: 2rem;
         list-style: none;
         font-family: var.$font-public;
     }
-    li:hover {
+    a:hover {
         color: var.$secondary-color-sanjuan;
         cursor: pointer;
     }
