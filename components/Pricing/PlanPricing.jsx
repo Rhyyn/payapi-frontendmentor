@@ -9,7 +9,7 @@ const PlanPricing = (props) => {
             <h3 className={styles.planName}>{props.data.Name}</h3>
             <h1 className={styles.price}>{props.data.Price}</h1>
             <div className = {styles.featuresContainer}>
-                {props.data.Features.map((item, index) => {
+                {props.data.Features.map((item, index) => { // for each Feature render this component
                     return (
                         <PricingFeatures
                             name={item.Name}

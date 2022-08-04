@@ -4,7 +4,7 @@ import styles from "../../styles/Pricing/PricingFeatures.module.scss";
 const PricingFeatures = (props) => {
     return (
         <React.Fragment>
-            {props.isValid ? (
+            {props.isValid ? ( // check if true to display check icon
                 <div className={styles.mainContainer}>
                     <div className = {styles.checkContainer}>
                         <img
@@ -14,7 +14,7 @@ const PricingFeatures = (props) => {
                     </div>
                     <p className={styles.textValid}>{props.name}</p>
                 </div>
-            ) : (
+            ) : ( // else no check icon and lower opacity
                 <div className={styles.mainContainer}>
                 <div className = {styles.checkContainer}>
                     </div>

@@ -3,7 +3,9 @@ import Header from "../components/Header";
 import PlanPricing from "../components/Pricing/PlanPricing";
 import ReadyToStart from "../components/ReadyToStart";
 import Footer from "../components/Footer";
+import styles from "../styles/Pricing/Pricing.module.scss";
 
+// Data of the 3 available Plans
 const plans = [
     {
         Name: "Free Plan",
@@ -114,18 +116,10 @@ const pricing = () => {
     return (
         <div>
             <Header></Header>
+            <h1 className = {styles.Title}>Pricing</h1>
             {plans.map((item, index) => {
                 return (<PlanPricing data={item} key={index}></PlanPricing>)
             })}
-            {/* {plans[0].Free.map((item, index) => {
-                return (
-                    <PlanPricing
-                        name={item.Name}
-                        price={item.Price}
-                        key={index}
-                    ></PlanPricing>
-                );
-            })} */}
             <ReadyToStart></ReadyToStart>
             <Footer></Footer>
         </div>
