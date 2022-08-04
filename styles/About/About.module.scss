@@ -1,0 +1,8 @@
+@use "../var.scss";
+
+.main {
+    background-color: var.$primary-color-tertiary;
+    height: 100vh;
+    overflow: auto;
+    overflow-x: hidden;
+}

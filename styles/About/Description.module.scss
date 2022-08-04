@@ -1,0 +1,20 @@
+@use "../var.scss";
+
+
+.title {
+    font-family: var.$font-serif;
+    color: var.$secondary-color-sanjuan;
+    text-align: center;
+}
+
+.paragraphTitle {
+    text-align: center;
+    font-family: var.$font-serif;
+    color: var.$secondary-color-sanjuan;
+}
+
+.paragraph {
+    text-align: center;
+    color: var.$secondary-color-lightsanjuan;
+    font-family: var.$font-public;
+}
