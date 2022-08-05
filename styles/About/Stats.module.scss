@@ -1,0 +1,64 @@
+@use "../var.scss";
+
+.mainContainer {
+    display: flex;
+
+    @include var.respond-to("mobile") {
+        align-items: center;
+        flex-direction: column;
+        width: 310px;
+        margin: 0 auto;
+    }
+
+    @include var.respond-to("tablet") {
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}
+
+.borderTop {
+    box-shadow: inset 0 1px 0 0 #d5d5d5;
+}
+
+.borderBottom {
+    box-shadow: inset 0 -1px 0 0 #d5d5d5;
+}
+
+
+
+
+.individualContainer {
+    display: flex;
+    height: 100px;
+    @include var.respond-to("mobile") {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 1rem;
+    }
+
+    @include var.respond-to("tablet") {
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}
+
+
+.statTitle {
+    font-family: var.$font-public;
+    color: var.$secondary-color-sanjuan;
+    opacity: 70%;
+    margin: 0;
+    font-weight: 400;
+}
+
+.number {
+    font-family: var.$font-serif;
+    color: var.$primary-color-main;
+    font-size: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
