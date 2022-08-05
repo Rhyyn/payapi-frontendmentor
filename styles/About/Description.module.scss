@@ -1,5 +1,10 @@
 @use "../var.scss";
 
+.mainContainer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .title {
     font-family: var.$font-serif;
     color: var.$secondary-color-sanjuan;
@@ -7,6 +12,7 @@
     font-weight: 500;
     width: 300px;
     margin: 0 auto;
+    font-size: 1.8rem;
 }
 
 .paragraphTitle {
@@ -15,13 +21,14 @@
     color: var.$secondary-color-sanjuan;
     font-weight: 500;
     font-size: 1.5rem;
-    margin-top: 3rem;
+    margin-top: 2.8rem;
 }
 
 .paragraph {
     text-align: center;
     color: var.$secondary-color-lightsanjuan;
     font-family: var.$font-public;
+    line-height: 30px;
     @include var.respond-to("mobile") {
         width: 350px;
         margin: 0 auto;
@@ -30,6 +37,20 @@
     @include var.respond-to("tablet") {
     }
 
+    @include var.respond-to("desktop") {
+    }
+}
+
+.image {
+    @include var.respond-to("mobile") {
+        background-image: url("../../public/assets/about/mobile/image-team-membersFIXED.png");
+        height: 300px;
+        width: 375px;
+        background-repeat: no-repeat;
+        margin: 4rem auto;
+    }
+    @include var.respond-to("tablet") {
+    }
     @include var.respond-to("desktop") {
     }
 }
