@@ -5,6 +5,24 @@
     margin-bottom: 3.5rem;
 }
 
+.paragraphContainer {
+    display: flex;
+    @include var.respond-to("mobile") {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    @include var.respond-to("tablet") {
+        flex-direction: row;
+        width: 700px;
+        margin: 4rem auto;
+        justify-content: center;
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}
+
 
 .paragraphTitle {
     text-align: center;
@@ -12,7 +30,18 @@
     color: var.$secondary-color-sanjuan;
     font-weight: 500;
     font-size: 1.5rem;
-    margin-top: 2.8rem;
+    margin: 2.8rem auto 0 auto;
+    width: 140px;
+
+    @include var.respond-to("mobile") {
+    }
+
+    @include var.respond-to("tablet") {
+        margin: 0;
+    }
+
+    @include var.respond-to("desktop") {
+    }
 }
 
 .paragraph {
@@ -26,6 +55,9 @@
     }
 
     @include var.respond-to("tablet") {
+        margin: 0 0 0 2rem;
+        width: 490px;
+        text-align: left;
     }
 
     @include var.respond-to("desktop") {
