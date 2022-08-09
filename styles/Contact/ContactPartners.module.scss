@@ -1,0 +1,34 @@
+@use "../var.scss";
+
+.partnersContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+
+    @include var.respond-to("mobile") {
+        justify-content: center;
+        max-width: 370px;
+    }
+
+    @include var.respond-to("tablet") {
+        justify-content: center;
+        max-width: 550px;
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}
+
+.partnersLogo {
+    width: 150px;
+    padding: 1.2rem;
+    @include var.respond-to("mobile") {
+    }
+
+    @include var.respond-to("tablet") {
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}

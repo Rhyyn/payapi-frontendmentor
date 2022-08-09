@@ -1,0 +1,40 @@
+@use "../var.scss";
+
+.title {
+    color: var.$secondary-color-sanjuan;
+    font-family: var.$font-serif;
+    text-align: center;
+    margin: 2rem auto;
+
+    @include var.respond-to("mobile") {
+        width: 327px;
+    }
+
+    @include var.respond-to("tablet") {
+        width: 573px;
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}
+
+.partnersTitle {
+    color: var.$secondary-color-sanjuan;
+    opacity: 75%;
+    font-family: var.$font-serif;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+
+    @include var.respond-to("mobile") {
+        width: 327px;
+    }
+
+    @include var.respond-to("tablet") {
+        width: 445px;
+    }
+
+    @include var.respond-to("desktop") {
+    }
+}
