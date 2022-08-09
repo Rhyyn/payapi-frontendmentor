@@ -1,34 +1,30 @@
 import React from "react";
 import styles from "../../styles/Home/Partners.module.scss";
+const PartnersLogo = [
+    {
+        url: "/assets/shared/desktop/tesla.svg",
+    },
+    {
+        url: "/assets/shared/desktop/microsoft.svg",
+    },
+    {
+        url: "/assets/shared/desktop/hewlett-packard.svg",
+    },
+    {
+        url: "/assets/shared/desktop/oracle.svg",
+    },
+    {
+        url: "/assets/shared/desktop/google.svg",
+    },
+    {
+        url: "/assets/shared/desktop/nvidia.svg",
+    },
+];
 
 const Partners = () => {
-    const PartnersLogo = [
-        {
-            url: "/assets/shared/desktop/tesla.svg",
-        },
-        {
-            url: "/assets/shared/desktop/microsoft.svg",
-        },
-        {
-            url: "/assets/shared/desktop/hewlett-packard.svg",
-        },
-        {
-            url: "/assets/shared/desktop/oracle.svg",
-        },
-        {
-            url: "/assets/shared/desktop/google.svg",
-        },
-        {
-            url: "/assets/shared/desktop/nvidia.svg",
-        },
-    ];
-
-    // PartnersLogo.map((item, index) => {
-    //     console.log(item.url);
-    // })
     return (
         <div className={styles.partnersContainer}>
-            <div className = {styles.subPartnersContainer}>
+            <div className={styles.subPartnersContainer}>
                 <div className={styles.partnersTitle}>
                     <h2>Who we work with</h2>
                     <p className={styles.partnersText}>
@@ -38,7 +34,7 @@ const Partners = () => {
                         need to create easy and accessible experiences for their
                         users.
                     </p>
-                    <button className = {styles.buttonAbout}>About Us</button>
+                    <button className={styles.buttonAbout}>About Us</button>
                 </div>
                 <div className={styles.partnersLogosContainer}>
                     {PartnersLogo.map((item, index) => {
