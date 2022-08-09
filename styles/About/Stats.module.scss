@@ -25,6 +25,8 @@
     }
 
     @include var.respond-to("desktop") {
+        width: 1200px;
+        margin-top: 4rem;
     }
 }
 
@@ -49,6 +51,7 @@
     }
 
     @include var.respond-to("desktop") {
+        min-width: 280px;
     }
 }
 
