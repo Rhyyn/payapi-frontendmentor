@@ -1,0 +1,51 @@
+@use "../var.scss";
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 330px;
+    margin: 0 auto;
+}
+
+.input {
+    border: none;
+    border-bottom: 2px solid rgba(var.$secondary-color-sanjuan, 0.5);
+    width: 327px;
+    padding-left: 20px;
+    padding-bottom: 1rem;
+    color: var.$secondary-color-sanjuan;
+    font-family: var.$font-public;
+    outline: none;
+    font-size: 1rem;
+    margin: 1rem;
+    &::placeholder {
+        color: var.$secondary-color-sanjuan;
+        font-family: var.$font-public;
+        font-size: 1rem;
+    }
+
+    &:focus {
+        border-bottom: 2px solid var.$secondary-color-sanjuan;
+    }
+}
+
+.inputMessage {
+    padding-bottom: 4rem;
+}
+
+.checkboxContainer {
+    display: flex;
+}
+
+.checkbox {
+    margin: 1rem;
+    width: 2rem;
+    height: 2rem;
+}
+
+.checkboxDescription {
+    color:var.$secondary-color-sanjuan;
+    font-family: var.$font-public;
+}
+
