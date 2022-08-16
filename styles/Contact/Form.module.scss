@@ -4,14 +4,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 330px;
     margin: 0 auto;
+    @include var.respond-to("mobile") {
+        width: 330px;
+    }
+
+    @include var.respond-to("tablet") {
+        width: 445px;
+    }
+
+    @include var.respond-to("desktop") {
+    }
 }
 
 .input {
     border: none;
     border-bottom: 2px solid rgba(var.$secondary-color-sanjuan, 0.5);
-    width: 327px;
     padding-left: 20px;
     padding-bottom: 1rem;
     color: var.$secondary-color-sanjuan;
@@ -28,6 +36,17 @@
     &:focus {
         border-bottom: 2px solid var.$secondary-color-sanjuan;
     }
+
+    @include var.respond-to("mobile") {
+        width: 327px;
+    }
+
+    @include var.respond-to("tablet") {
+        width: 445px;
+    }
+
+    @include var.respond-to("desktop") {
+    }
 }
 
 .inputMessage {
@@ -38,14 +57,64 @@
     display: flex;
 }
 
-.checkbox {
-    margin: 1rem;
-    width: 2rem;
-    height: 2rem;
-}
-
 .checkboxDescription {
-    color:var.$secondary-color-sanjuan;
+    color: var.$secondary-color-sanjuan;
     font-family: var.$font-public;
+    font-size: 0.9rem;
+    line-height: 20px;
 }
 
+.submitButton {
+    width: 152px;
+    height: 48px;
+    color: var.$secondary-color-sanjuan;
+    background-color: transparent;
+    border: 2px solid var.$secondary-color-sanjuan;
+    border-radius: 25px;
+    font-weight: 600;
+    font-family: var.$font-public;
+    font-size: 1.1rem;
+    @include var.respond-to("mobile") {
+        margin: 0 auto 5rem 10px;
+    }
+
+    @include var.respond-to("tablet") {
+    }
+
+    @include var.respond-to("desktop") {
+        margin: 0 auto 0 10px;
+    }
+
+    &:hover {
+        background-color: var.$secondary-color-sanjuan;
+        color: white;
+        cursor: pointer;
+    }
+}
+
+.checkboxContainer input[type="checkbox"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+.checkbox {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    background: #fff;
+    border: 2px #ddd solid;
+}
+
+.checkboxActive {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 2px #ddd solid;
+    border-color: var.$primary-color-main;
+    background: var.$primary-color-main;
+}

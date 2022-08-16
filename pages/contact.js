@@ -11,9 +11,11 @@ const contact = () => {
         <div className={styles.main}>
             <Header></Header>
             <div className={styles.mainContainer}>
-                <h1 className={styles.title}>
-                    Submit a help request and we'll get in touch shortly.
-                </h1>
+                <div className = {styles.titleContainer}>
+                    <h1 className={styles.title}>
+                        Submit a help request and we'll get in touch shortly.
+                    </h1>
+                </div>
                 <div className={styles.formPartnersContainer}>
                     <Form></Form>
                     <div className={styles.partnersContainer}>
