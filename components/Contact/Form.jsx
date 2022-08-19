@@ -5,9 +5,9 @@ import { useState } from "react";
 const Form = () => {
     const [isChecked, setIsChecked] = useState(false);
 
-    const getStyle = () => {
-        if (isChecked) return styles.checkbox + styles.checkboxActive;
-        else return styles.checkbox + "";
+    const over = () => {
+        console.log("hover");
+        console.log(isChecked);
     };
     return (
         <div className={styles.mainContainer}>
@@ -38,16 +38,26 @@ const Form = () => {
                     placeholder="Message"
                 ></input>
                 <div className={styles.checkboxContainer}>
-                    <input
-                        className={styles.checkbox}
-                        type="checkbox"
-                        onChange={() => {
-                            setIsChecked(!isChecked);
-                        }}
-                    ></input>
-                    {/* <span className={styles.checkbox + `${isChecked ? styles.checkboxActive : ""}`} aria-hidden="true" /> */}
-                    <span className={`${styles.checkbox} ${isChecked ? styles.checkboxActive : "undefined"}`} aria-hidden="true" />
-                    <p className={styles.checkboxDescription}>
+                    {isChecked ? (
+                        <div
+                            className={styles.checkboxClicked}
+                            role="checkbox"
+                            onClick={() => {
+                                setIsChecked(!isChecked)
+                            }}
+                        >
+                            <img className = {styles.checkLogo} src="/assets/shared/desktop/icon-check.svg" />
+                        </div>
+                    ) : (
+                        <div
+                            className={styles.checkboxUnactive}
+                            role="checkbox"
+                            onClick={() => {
+                                setIsChecked(!isChecked)
+                            }}
+                        ></div>
+                    )}
+                    <p className={styles.checkboxDesc}>
                         Stay up-to-date with company announcements and updates
                         to our API
                     </p>

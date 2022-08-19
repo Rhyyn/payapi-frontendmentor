@@ -92,29 +92,48 @@
     }
 }
 
-.checkboxContainer input[type="checkbox"] {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+.checkboxContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.checkbox {
+.checkboxUnactive {
     display: inline-block;
-    height: 30px;
-    width: 30px;
-    background: #fff;
-    border: 2px #ddd solid;
+    width: 24px;
+    height: 24px;
+    background-color: #979797;
+    margin: 1rem;
+    flex-shrink: 0;
+    border-radius: 2px;
+
+    &:hover {
+        background-color: var.$primary-color-main;
+        cursor: pointer;
+    }
 }
 
-.checkboxActive {
-    display: inline-block;
-    height: 30px;
-    width: 30px;
-    border: 2px #ddd solid;
-    border-color: var.$primary-color-main;
-    background: var.$primary-color-main;
+.checkboxClicked {
+    width: 24px;
+    height: 24px;
+    margin: 1rem;
+    flex-shrink: 0;
+    background-color: var.$primary-color-main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
 }
+
+.checkLogo {
+    height: 11px;
+}
+
+.checkboxDesc {
+    font-family: var.$font-public;
+    color: var.$secondary-color-sanjuan;
+    font-size: 0.9rem;
+}
+
+
+
