@@ -1,0 +1,127 @@
+@use "../var.scss";
+
+.mainContainer {
+    display: flex;
+
+    @include var.respond-to("mobile") {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    @include var.respond-to("tablet") {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        height: 90%;
+    }
+
+    @include var.respond-to("desktop") {
+        flex-direction: row;
+        width: 1015px;
+        margin: 0 auto;
+        height: 600px;
+        position: relative;
+        z-index: 3;
+    }
+}
+
+.sloganContainer {
+    display: flex;
+
+    @include var.respond-to("mobile") {
+        flex-direction: column;
+        max-width: 90vw;
+    }
+
+    @include var.respond-to("tablet") {
+        width: 600px;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @include var.respond-to("desktop") {
+        width: 60vw;
+        justify-content: center;
+        flex-direction: column;
+        align-items: baseline;
+    }
+}
+
+.slogan {
+    font-family: var.$font-serif;
+    color: var.$secondary-color-sanjuan;
+    font-weight: 500;
+
+    @include var.respond-to("mobile") {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    @include var.respond-to("tablet") {
+        max-width: 680px;
+        text-align: center;
+        font-size: 3rem;
+        margin: 2rem 0 2    rem 0;
+    }
+
+    @include var.respond-to("desktop") {
+        max-width: 28rem;
+        text-align: left;
+        font-size: 4rem;
+        max-width: 30rem;
+        // margin: 2rem;
+    }
+}
+
+.contactTextContainer {
+    display: flex;
+
+    p {
+        padding-right: 8px;
+        color: var.$secondary-color-lightsanjuan;
+    }
+
+    @include var.respond-to("mobile") {
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    @include var.respond-to("tablet") {
+        width: 280px;
+        padding-left: 0px;
+    }
+
+    @include var.respond-to("desktop") {
+        width: 30rem;
+        padding-left: 1.7rem;
+        justify-content: flex-start;
+    }
+}
+
+.phoneContainer {
+    z-index: 3;
+    display: flex;
+    align-items: center;
+
+    @include var.respond-to("mobile") {
+        z-index: 2;
+        img {
+            height: 350px;
+        }
+    }
+
+    @include var.respond-to("tablet") {
+        img {
+            height: 370px;
+        }
+    }
+
+    @include var.respond-to("desktop") {
+        img {
+            height: 500px;
+        }
+    }
+}

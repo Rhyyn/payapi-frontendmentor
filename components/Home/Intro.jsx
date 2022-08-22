@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Home/Home.module.scss";
+import styles from "../../styles/Home/Intro.module.scss";
 import Input from "../Home/Input";
 
 const Intro = () => {

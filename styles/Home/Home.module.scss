@@ -2,153 +2,48 @@
 
 .main {
     background-color: var.$primary-color-tertiary;
-    height: 100vh;
-    overflow: auto;
-    overflow-x: hidden;
 }
-
-// .bgPattern { // round pattern for Desktop
-//     position: absolute;
-//     top: -200px;
-//     right: -200px;
-//     z-index: 2;
-// }
 
 .bgPattern {
-    position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        background-image: url("../../public/bg-pattern-circle.svg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        top: -23.3%;
-        left: 55%;
-        width: 780px;
-        height: 780px;
-    }
-}
-
-.mainContainer {
-    display: flex;
-
     @include var.respond-to("mobile") {
-        flex-direction: column-reverse;
-        align-items: center;
-        margin-top: 2rem;
-    }
-
-    @include var.respond-to("tablet") {
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        height: 90%;
-    }
-
-    @include var.respond-to("desktop") {
-        flex-direction: row;
-        width: 1015px;
-        margin: 0 auto;
-        height: 600px;
-        position: relative;
-        z-index: 3;
-    }
-}
-
-.sloganContainer {
-    display: flex;
-
-    @include var.respond-to("mobile") {
-        flex-direction: column;
-        max-width: 90vw;
-    }
-
-    @include var.respond-to("tablet") {
-        width: 600px;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    @include var.respond-to("desktop") {
-        width: 60vw;
-        justify-content: center;
-        flex-direction: column;
-        align-items: baseline;
-    }
-}
-
-.slogan {
-    font-family: var.$font-serif;
-    color: var.$secondary-color-sanjuan;
-    font-weight: 500;
-
-    @include var.respond-to("mobile") {
-        font-size: 1.5rem;
-    }
-
-    @include var.respond-to("tablet") {
-        max-width: 680px;
-        text-align: center;
-        font-size: 3rem;
-        // margin: 1rem 0 1rem;
-    }
-
-    @include var.respond-to("desktop") {
-        max-width: 28rem;
-        text-align: left;
-        font-size: 4rem;
-        max-width: 30rem;
-        // margin: 2rem;
-    }
-}
-
-.contactTextContainer {
-    display: flex;
-
-    p {
-        padding-right: 8px;
-        color: var.$secondary-color-lightsanjuan;
-    }
-
-    @include var.respond-to("mobile") {
-        justify-content: center;
-        padding-left: 0px;
-    }
-
-    @include var.respond-to("tablet") {
-        width: 280px;
-        padding-left: 0px;
-    }
-
-    @include var.respond-to("desktop") {
-        width: 30rem;
-        padding-left: 1.7rem;
-        justify-content: flex-start;
-    }
-}
-
-.phoneContainer {
-    z-index: 3;
-    display: flex;
-    align-items: center;
-
-    @include var.respond-to("mobile") {
-        z-index: 2;
-        img {
-            height: 350px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../../public/bg-pattern-circle.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 200vw;
+            height: 200vw;
+            top: -140vw;
+            left: -49%;
         }
     }
 
     @include var.respond-to("tablet") {
-        img {
-            height: 370px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../../public/bg-pattern-circle.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            width: 123.6vw;
+            height: 123.6vw;
+            top: -85vw;
+            left: -11.8vw;
         }
     }
 
     @include var.respond-to("desktop") {
-        img {
-            height: 500px;
+        &::before {
+            content: "";
+            position: absolute;
+            background-image: url("../../public/bg-pattern-circle.svg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            top: -23.3%;
+            left: 55%;
+            width: 780px;
+            height: 780px;
         }
     }
 }
@@ -200,4 +95,3 @@
         }
     }
 }
-
