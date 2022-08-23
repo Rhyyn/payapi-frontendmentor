@@ -3,7 +3,7 @@ import styles from "../../styles/Home/SimpleUI.module.scss";
 
 const SimpleUI = () => {
     return (
-        <div className={styles.mainContainer}>
+        <div className={`${styles.mainContainer} ${styles.bgPattern}`}>
             <div className={styles.TextContainer}>
                 <h3 className={styles.Title}>Simple UI & UX</h3>
                 <p className={styles.Text}>
@@ -11,12 +11,10 @@ const SimpleUI = () => {
                     website’s checkout flow and designed to optimize conversion.
                 </p>
             </div>
-            <div className = {styles.imageContainer}>
-                <img
-                    className={styles.image}
-                    src="/assets/home/desktop/illustration-simple-ui.svg"
-                />
-            </div>
+            <img
+                className={styles.image}
+                src="/assets/home/desktop/illustration-simple-ui.svg"
+            />
         </div>
     );
 };

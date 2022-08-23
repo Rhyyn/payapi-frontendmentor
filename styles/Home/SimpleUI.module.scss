@@ -1,5 +1,17 @@
 @use "../var.scss";
 
+.bgPattern {
+    position: relative;
+}
+
+.bgPattern::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../public/bg-pattern-circle.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .mainContainer {
     display: flex;
     justify-content: center;
@@ -17,9 +29,14 @@
 
     @include var.respond-to("desktop") {
         width: 1160px;
-        height: 445px;
+        height: 560px;
         flex-direction: row;
-        padding-top: 10rem;
+        &::before {
+            height: 118.1%;
+            width: 70.3%;
+            right: -56%;
+            top: -12%;
+        }
     }
 }
 
@@ -97,6 +114,7 @@
     }
 
     @include var.respond-to("desktop") {
-        width: auto;
+        width: 90%;
+        transform: translateX(14%);
     }
 }
