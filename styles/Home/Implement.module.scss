@@ -18,9 +18,9 @@
 
     @include var.respond-to("desktop") {
         width: 1015px;
-        height: 445px;
+        height: 560px;
         flex-direction: row;
-        margin: 2.8rem auto;
+        margin: 0 auto;
     }
 }
 
