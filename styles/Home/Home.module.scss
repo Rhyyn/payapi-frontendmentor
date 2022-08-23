@@ -4,50 +4,6 @@
     background-color: var.$primary-color-tertiary;
 }
 
-.bgPattern {
-    @include var.respond-to("mobile") {
-        &::before {
-            content: "";
-            position: absolute;
-            background-image: url("../../public/bg-pattern-circle.svg");
-            background-size: 100%;
-            background-repeat: no-repeat;
-            width: 200vw;
-            height: 200vw;
-            top: -140vw;
-            left: -49%;
-        }
-    }
-
-    @include var.respond-to("tablet") {
-        &::before {
-            content: "";
-            position: absolute;
-            background-image: url("../../public/bg-pattern-circle.svg");
-            background-size: 100%;
-            background-repeat: no-repeat;
-            width: 123.6vw;
-            height: 123.6vw;
-            top: -85vw;
-            left: -11.8vw;
-        }
-    }
-
-    @include var.respond-to("desktop") {
-        &::before {
-            content: "";
-            position: absolute;
-            background-image: url("../../public/bg-pattern-circle.svg");
-            background-size: 100%;
-            background-repeat: no-repeat;
-            top: -23.3%;
-            left: 55%;
-            width: 780px;
-            height: 780px;
-        }
-    }
-}
-
 .partnerContainer {
     display: flex;
     height: 40%;
@@ -92,6 +48,80 @@
         .phoneContainer {
             display: flex;
             justify-content: center;
+        }
+    }
+}
+
+/* BACKGROUND CIRCLE PATERNS */
+
+.bgPattern {
+    position: relative;
+}
+
+.bgPattern::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../public/bg-pattern-circle.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.main {
+    @include var.respond-to("mobile") {
+        &::before {
+            width: 200vw;
+            height: 200vw;
+            top: -140vw;
+            left: -49%;
+        }
+    }
+
+    @include var.respond-to("tablet") {
+        &::before {
+            width: 123.6vw;
+            height: 123.6vw;
+            top: -85vw;
+            left: -11.8vw;
+        }
+    }
+
+    @include var.respond-to("desktop") {
+        &::before {
+            top: -400%;
+            left: 55%;
+            width: 780px;
+            height: 780px;
+        }
+    }
+}
+
+.partnersSection {
+    overflow: hidden;
+
+    @include var.respond-to("mobile") {
+        &::before {
+            width: 200vw;
+            height: 200vw;
+            top: -140vw;
+            left: -49%;
+        }
+    }
+
+    @include var.respond-to("tablet") {
+        &::before {
+            width: 123.6vw;
+            height: 123.6vw;
+            top: -90vw;
+            left: -100px;
+        }
+    }
+
+    @include var.respond-to("desktop") {
+        &::before {
+            top: -76.2%;
+            left: -17%;
+            width: 780px;
+            height: 780px;
         }
     }
 }

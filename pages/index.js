@@ -15,22 +15,16 @@ export default function Home() {
             <section className={`${styles.main} ${styles.bgPattern}`}>
                 <Header></Header>
             </section>
-            <section className = {styles.introSection}>
                 <Intro></Intro>
-            </section>
-            <section className={styles.partnersSection}>
+            <section
+                className={`${styles.partnersSection} ${styles.bgPattern}`}
+            >
                 <Partners></Partners>
             </section>
             <section className={styles.implementSection}>
                 <Implement></Implement>
-            </section>
-            <section className={styles.simpleUISection}>
                 <SimpleUI></SimpleUI>
-            </section>
-            <section className={styles.perksSection}>
                 <Perks></Perks>
-            </section>
-            <section className={styles.readyToStartSection}>
                 <ReadyToStart></ReadyToStart>
             </section>
             <section className={styles.footerSection}>
