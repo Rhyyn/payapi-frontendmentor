@@ -113,17 +113,23 @@ const plans = [
 
 const pricing = () => {
     return (
-        <div className = {styles.main}>
-            <Header></Header>
-            <h1 className={styles.title}>Pricing</h1>
-            <div className = {styles.plansContainer}>
-                {plans.map((item, index) => {
-                    return <PlanPricing data={item} key={index}></PlanPricing>
-                })}
-            </div>
-            <ReadyToStart></ReadyToStart>
-            <Footer></Footer>
-        </div>
+        <React.Fragment>
+            <section className={`${styles.main} ${styles.bgPattern}`}>
+                <Header></Header>
+                <h1 className={styles.title}>Pricing</h1>
+                <div className={styles.plansContainer}>
+                    {plans.map((item, index) => {
+                        return (
+                            <PlanPricing data={item} key={index}></PlanPricing>
+                        );
+                    })}
+                </div>
+                <ReadyToStart></ReadyToStart>
+            </section>
+            <section className={`${styles.footerSection} ${styles.bgPattern}`}>
+                <Footer></Footer>
+            </section>
+        </React.Fragment>
     );
 };
 
