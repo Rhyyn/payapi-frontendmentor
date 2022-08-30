@@ -36,8 +36,10 @@ const Description = () => {
                     developers.
                 </p>
             </div>
-
-            <div className={styles.image}></div>
+            <div>
+                <div className = {styles.image}></div>
+                <div className = {styles.bgPattern}></div>
+            </div>
         </div>
     );
 };

@@ -137,6 +137,8 @@
 }
 
 .image {
+    z-index: 20;
+    position: relative;
     @include var.respond-to("mobile") {
         background-image: url("../../public/assets/about/mobile/image-team-membersFIXED.png");
         height: 300px;
@@ -155,3 +157,24 @@
         height: 500px;
     }
 }
+
+/* BACKGROUND CIRCLE PATERNS */
+
+.bgPattern {
+    position: relative;
+    z-index: 2;
+    content: "";
+    position: absolute;
+    background-image: url("../../public/bg-pattern-circle.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: 1;
+
+    @include var.respond-to("desktop") {
+            top: 25%;
+            left: -38%;
+            width: 780px;
+            height: 780px;
+    }
+}
+
