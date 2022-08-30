@@ -54,6 +54,7 @@ const NavBar = () => {
                     src="/menu.svg"
                     width={28}
                     height={17}
+                    alt="menu icon"
                 ></Image>
             ) : null}
             {isMenuOpen && windowSize.width <= 720 ? (
@@ -63,6 +64,7 @@ const NavBar = () => {
                     src="/close.svg"
                     width={22}
                     height={23}
+                    alt="menu icon"
                 ></Image>
             ) : null}
             {isMenuOpen && windowSize.width <= 720 ? (

@@ -43,6 +43,7 @@ const Partners = () => {
                                 className={styles.partnersLogo}
                                 src={item.url}
                                 key={index}
+                                alt="partners logos"
                             />
                         );
                     })}

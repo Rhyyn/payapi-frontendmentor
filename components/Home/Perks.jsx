@@ -8,6 +8,7 @@ const Perks = () => {
                 <img
                     className={styles.image}
                     src="/assets/home/desktop/icon-personal-finances.svg"
+                    alt="personal finances icon"
                 />
                 <h4 className={styles.Title}>Personal Finances</h4>
                 <p className={styles.Text}>
@@ -20,6 +21,7 @@ const Perks = () => {
                 <img
                     className={styles.image}
                     src="/assets/home/desktop/icon-banking-and-coverage.svg"
+                    alt="banking icon"
                 />
                 <h4 className={styles.Title}>Banking & Coverage</h4>
                 <p className={styles.Text}>
@@ -32,6 +34,7 @@ const Perks = () => {
                 <img
                     className={styles.image}
                     src="/assets/home/desktop/icon-consumer-payments.svg"
+                    alt="consumer payment icon"
                 />
                 <h4 className={styles.Title}>Consumer Payments</h4>
                 <p className={styles.Text}>

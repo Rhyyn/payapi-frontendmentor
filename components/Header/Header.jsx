@@ -8,14 +8,15 @@ const Header = () => {
     return (
         <header className={styles.headerContainer}>
             <div className={styles.mainNavContainer}>
-                <a href="/">
-                    <Image
-                        src="/logo.svg"
-                        width={135}
-                        height={38}
-                        className={styles.logo}
-                    ></Image>
-                </a>
+                    <Link href="/">
+                        <Image
+                            src="/logo.svg"
+                            width={135}
+                            height={38}
+                            className={styles.logo}
+                            alt="brand logo"
+                        ></Image>
+                    </Link>
                 <NavBar></NavBar>
             </div>
             <button className={styles.scheduleButton}>Schedule a Demo</button>
