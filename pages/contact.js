@@ -8,28 +8,33 @@ import styles from "../styles/Contact/Contact.module.scss";
 
 const contact = () => {
     return (
-        <div className={styles.main}>
-            <Header></Header>
-            <div className={styles.mainContainer}>
-                <div className = {styles.titleContainer}>
-                    <h1 className={styles.title}>
-                        Submit a help request and we'll get in touch shortly.
-                    </h1>
-                </div>
-                <div className={styles.formPartnersContainer}>
-                    <Form></Form>
-                    <div className={styles.partnersContainer}>
-                        <h2 className={styles.partnersTitle}>
-                            Join the thousands of innovators already building
-                            with us
-                        </h2>
-                        <ContactPartners></ContactPartners>
+        <React.Fragment>
+            <section className={`${styles.main} ${styles.bgPattern}`}>
+                <Header></Header>
+                <div className={styles.mainContainer}>
+                    <div className={styles.titleContainer}>
+                        <h1 className={styles.title}>
+                            Submit a help request and we'll get in touch
+                            shortly.
+                        </h1>
                     </div>
+                    <div className={styles.formPartnersContainer}>
+                        <Form></Form>
+                        <div className={styles.partnersContainer}>
+                            <h2 className={styles.partnersTitle}>
+                                Join the thousands of innovators already
+                                building with us
+                            </h2>
+                            <ContactPartners></ContactPartners>
+                        </div>
+                    </div>
+                    <ReadyToStart></ReadyToStart>
                 </div>
-                <ReadyToStart></ReadyToStart>
-            </div>
-            <Footer></Footer>
-        </div>
+            </section>
+            <section className={`${styles.footerSection} ${styles.bgPattern}`}>
+                <Footer></Footer>
+            </section>
+        </React.Fragment>
     );
 };
 
