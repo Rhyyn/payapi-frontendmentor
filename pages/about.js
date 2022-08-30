@@ -9,16 +9,20 @@ import styles from "../styles/About/About.module.scss";
 
 const about = () => {
     return (
-        <div className = {styles.main}>
-            <Header></Header>
-            <div className={styles.mainContainer}>
-                <Description></Description>
-                <Stats></Stats>
-                <Environment></Environment>
-                <ReadyToStart></ReadyToStart>
-            </div>
-            <Footer></Footer>
-        </div>
+        <React.Fragment>
+            <section className={`${styles.main} ${styles.bgPattern}`}>
+                <Header></Header>
+                <div className={styles.mainContainer}>
+                    <Description></Description>
+                    <Stats></Stats>
+                    <Environment></Environment>
+                    <ReadyToStart></ReadyToStart>
+                </div>
+            </section>
+            <section className={`${styles.footerSection} ${styles.bgPattern}`}>
+                <Footer></Footer>
+            </section>
+        </React.Fragment>
     );
 };
 
