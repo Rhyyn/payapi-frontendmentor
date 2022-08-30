@@ -66,7 +66,7 @@ const NavBar = () => {
                 ></Image>
             ) : null}
             {isMenuOpen && windowSize.width <= 720 ? (
-                <div className={`${styles.menuBackground} ${closed}`}>
+                <div className={`${styles.menuBackground} ${styles.bgPattern} ${closed}`}>
                     <hr className={styles.line}></hr>
                     <div className={styles.menuItems}>
                         {navItems.map((item, index) => {
