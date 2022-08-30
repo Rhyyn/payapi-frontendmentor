@@ -27,7 +27,7 @@ export default function Home() {
                 <Perks></Perks>
                 <ReadyToStart></ReadyToStart>
             </section>
-            <section className={styles.footerSection}>
+            <section className={`${styles.footerSection} ${styles.bgPattern}`}>
                 <Footer></Footer>
             </section>
         </React.Fragment>
