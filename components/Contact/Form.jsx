@@ -32,11 +32,11 @@ const Form = () => {
                     type="text"
                     placeholder="Title"
                 ></input>
-                <input
+                <textarea
                     className={styles.input + " " + styles.inputMessage}
                     type="text"
                     placeholder="Message"
-                ></input>
+                ></textarea>
                 <div className={styles.checkboxContainer}>
                     {isChecked ? (
                         <div
