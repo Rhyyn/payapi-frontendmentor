@@ -18,7 +18,7 @@ const Intro = () => {
                 </div>
             </div>
             <div className={styles.phoneContainer}>
-                <img src="/illustration-phone-mockup.svg" />
+                <img src="/illustration-phone-mockup.svg" alt="visual of a smartphone" />
             </div>
         </div>
     );

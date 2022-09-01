@@ -14,6 +14,7 @@ const SimpleUI = () => {
             <img
                 className={styles.image}
                 src="/assets/home/desktop/illustration-simple-ui.svg"
+                alt="visual simple ui"
             />
         </div>
     );

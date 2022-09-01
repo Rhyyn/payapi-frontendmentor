@@ -13,6 +13,7 @@ const Footer = () => {
                         src="/footerLogo.svg"
                         width={135}
                         height={38}
+                        alt="brand logo"
                     />
                     <div className={styles.navContainer}>
                         {navItems.map((item, index) => {

@@ -46,7 +46,7 @@ const Form = () => {
                                 setIsChecked(!isChecked)
                             }}
                         >
-                            <img className = {styles.checkLogo} src="/assets/shared/desktop/icon-check.svg" />
+                            <img className = {styles.checkLogo} src="/assets/shared/desktop/icon-check.svg" alt="checked icon" />
                         </div>
                     ) : (
                         <div

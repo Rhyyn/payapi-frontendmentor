@@ -14,6 +14,7 @@ const Header = () => {
                         width={135}
                         height={38}
                         className={styles.logo}
+                        alt="brand logo"
                     ></Image>
                 </a>
                 <NavBar></NavBar>

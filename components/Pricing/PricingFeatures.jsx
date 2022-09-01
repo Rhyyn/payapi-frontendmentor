@@ -10,6 +10,7 @@ const PricingFeatures = (props) => {
                         <img
                             src="/assets/shared/desktop/icon-check.svg"
                             className={styles.iconCheck}
+                            alt="checked icon"
                         ></img>
                     </div>
                     <p className={styles.textValid}>{props.name}</p>

@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+module.exports = {
+  basePath: '/gh-pages-test',
+  images: {
+    loader: 'akamai',
+    path: '',
+  }
 }
-
-module.exports = nextConfig
