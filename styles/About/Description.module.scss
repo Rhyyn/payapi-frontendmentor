@@ -137,8 +137,6 @@
 }
 
 .image {
-    z-index: 20;
-    position: relative;
     @include var.respond-to("mobile") {
         background-image: url("../../public/assets/about/mobile/image-team-membersFIXED.png");
         height: 300px;

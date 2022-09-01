@@ -43,7 +43,7 @@ const NavBar = () => {
             {windowSize.width >= 720 ? (
                 <div className={styles.navBarContainer}>
                     {navItems.map((item, index) => {
-                        return <a href={'/' + item.toLowerCase()} key={index}>{item}</a>;
+                        return <a href={`${process.env.BACKEND_URL}`'/' + item.toLowerCase()} key={index}>{item}</a>;
                     })}
                 </div>
             ) : null}
@@ -51,7 +51,7 @@ const NavBar = () => {
                 <Image
                     onClick={handleMenuOpen}
                     className={styles.menuIcon}
-                    src="/menu.svg"
+                    src="/assets/menu.svg"
                     width={28}
                     height={17}
                     alt="hamburger menu icon"
@@ -61,7 +61,7 @@ const NavBar = () => {
                 <Image
                     onClick={handleMenuClose}
                     className={styles.menuIcon}
-                    src="/close.svg"
+                    src="/assets/close.svg"
                     width={22}
                     height={23}
                     alt="close menu icon"

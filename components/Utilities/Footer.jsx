@@ -10,7 +10,7 @@ const Footer = () => {
                 <div className={styles.leftContainer}>
                     <img
                         className={styles.logo}
-                        src="/footerLogo.svg"
+                        src="/assets/footerLogo.svg"
                         width={135}
                         height={38}
                         alt="brand logo"
