@@ -5,7 +5,7 @@ function MyApp({ Component, pageProps }) {
     return (
         <div>
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="Payapi" content="PayAPI Frontend mentor challenge" />
                 <meta
                     name="viewport"
