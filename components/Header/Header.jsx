@@ -10,7 +10,7 @@ const Header = () => {
             <div className={styles.mainNavContainer}>
                     <Link href="/">
                         <Image
-                            src="/logo.svg"
+                            src="/assets/logo.svg"
                             width={135}
                             height={38}
                             className={styles.logo}
