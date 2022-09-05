@@ -49,6 +49,7 @@
 
 .footerSection {
     overflow: hidden;
+    background-color: var.$secondary-color-mirage;
 
     @include var.respond-to("mobile") {
         &::before {
