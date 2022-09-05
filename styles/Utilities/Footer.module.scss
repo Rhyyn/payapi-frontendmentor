@@ -2,12 +2,13 @@
 
 .footerContainer {
     width: 100vw;
-    background-color: var.$secondary-color-mirage;
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 3;
 
     @include var.respond-to("mobile") {
-        height: 270px;
+        height: 285px;
     }
 
     @include var.respond-to("tablet") {
@@ -83,6 +84,7 @@
 
     @include var.respond-to("mobile") {
         flex-direction: column;
+        padding-left: 0;
     }
 
     @include var.respond-to("tablet") {
