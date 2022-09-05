@@ -15,11 +15,11 @@ const Footer = () => {
                         height={38}
                         alt="brand logo"
                     />
-                    <div className={styles.navContainer}>
+                    <ul className={styles.navContainer}>
                         {navItems.map((item, index) => {
                             return <li key={index}>{item}</li>;
                         })}
-                    </div>
+                    </ul>
                 </div>
                 <div className={styles.socialsContainer}>
                     <div className={styles.socialLogo}>
